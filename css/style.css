@@ -32,7 +32,6 @@ nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    border-bottom: 1px solid gray;
     position: fixed;
     top: 0;
     left: 0;
@@ -405,6 +404,195 @@ border-radius: 6px;
 
 /* us card endddddddddddd */
 
+/* services startttttttttttttttttttt */
+
+.services{
+    height: auto;
+    width: 100%;
+    padding: 100px 0;
+    background: rgb(255, 255, 255);
+}
+.services-contant{
+    padding: 0 150px;
+    padding-bottom: 40px;
+
+}
+.services-contant h3{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #bd141a;
+}
+.services-contant h1{
+    font-size: 50px;
+   width: 45%;
+   padding-top: 13px;
+}
+.services-card-con{
+    width: 100%;
+  
+    padding: 20px 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 33px;
+}
+.services-card{
+    height: 200px;
+    width: 230px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(128, 128, 128, 0.404);
+    flex-direction: column;
+    gap: 23px;
+}
+.services-card img{
+    height: 90px;
+}
+
+
+/* services enddddddddddddddddddddd */
+
+
+
+/* contactttttttttttttt start        */
+.contact{
+   
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    background: linear-gradient(rgba(189, 20, 26, 0.377),rgba(189, 20, 90, 0.397) ) , url(../assets/hero1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.contact-con{
+    height: 100%;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+.contact-con h1{
+font-size: 50px;
+padding-bottom: 40px;
+}
+.contact-form{
+    height: 100%;
+    width: 45%;
+}
+.contact-con h4{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 20px 0 ;
+    padding-bottom: 30px;
+}
+.contact-card-con{
+    display: flex;
+    gap: 23px;
+}
+.contact-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 23px;
+    flex-direction: column;
+    height: 170px;
+    width: 270px;
+    color: black;
+}
+.contact-card i{
+    font-size: 25px;
+    background: #ce2f346b;
+    padding: 10px;
+    border-radius: 50%;
+}
+.contact-card h3{
+    padding: 10px 0;
+}
+.contact-card p{
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #8D0005;
+}
+.contact-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.contact-form form{
+    width: 90%;
+    height: 85%;
+    background: rgba(255, 255, 255, 0.356);
+    border-radius: 23px;
+    padding: 40px 20px;
+    border: 1px solid white;
+    display: flex;
+    backdrop-filter: blur(30px);
+    flex-direction: column;
+    align-items: center;
+}
+.contact-form form input ,select{
+    padding: 20px 20px;
+    border-radius: 17px;
+    border: none;
+    font-size: 18px;
+    outline: none;
+    background: white;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.form-row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+}
+.form-row input{
+    width: 40%;
+}
+.contact-form button{
+    padding: 15px 60px ;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    color: white;
+    background: #bd141a;
+    border-radius: 12px;
+}
+.contact-form button:hover{
+    color: #8D0005;
+    background: white;
+}
+.contact-form select{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
+}
+.contact-form select::after{
+  content: " ";
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 100px;
+  background: red;
+}
+/* contactttttttttttttt enddddddddddddddd  */
+
+
+
+
+
+
 
 
 
@@ -436,6 +624,9 @@ border-radius: 6px;
         padding-left: 20px;
         width: 60%;
     }
+    .services-contant{
+        padding: 0 60px;
+    }
     .about-img {
         width: 40%;
     }
@@ -445,6 +636,14 @@ border-radius: 6px;
     .us-card-con{
         height: auto;
     }
+   .services-card-con{
+    padding: 20px 20px;
+
+   }
+   .contact{
+    padding: 30px 40px;
+
+   }
    
 }
 
@@ -452,7 +651,9 @@ border-radius: 6px;
 
 @media (max-width:928px) {
 
-   
+   .services-contant h1{
+    width:80%;
+   }
     .us-1 h1{
         font-size: 35px;
     }
@@ -493,6 +694,21 @@ border-radius: 6px;
     }
     .ab-img-1{
         width: 50%;
+    }
+
+    .contact{
+        flex-direction: column;
+        height: auto;
+    }
+    .contact-con{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 40px;
+    }
+    .contact-form{
+        width: 100%;
+        
     }
 }
 @media (max-width:800px) {
@@ -544,8 +760,38 @@ border-radius: 6px;
 }
 
 @media (max-width:680px) {
-
-
+    .contact-con{
+        width: 100%;
+        text-align: center;
+    }
+    .contact{
+         padding: 100px 10px;
+    }
+    .services-card{
+        height: 250px;
+        width: 290px;
+       }
+       .contact-con h1{
+        font-size: 40px;
+        padding-bottom: 10px;
+        font-weight: 800;
+        }   
+ .contact-card-con{
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+ }
+ .contact-card{
+    width: 80%;
+ }
+   .services-contant{
+    padding: 0 40px;
+   }
+   .services-contant h1{
+    width: 100%;
+   }
     .us{
         height: auto;
         flex-direction: column;
@@ -625,6 +871,7 @@ border-radius: 6px;
     }
     .hero-con{
         justify-content: end;
+        padding-bottom: 70px;
     }
     .hero-con button{
        margin-bottom: 10px;
@@ -640,5 +887,11 @@ border-radius: 6px;
         
         height: 90px;
           top: 80px;
+    }
+    .services-contant h1{
+        font-size: 40px;
+    }
+    .services-card-con{
+        padding: 100px 20px;
     }
 }

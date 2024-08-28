@@ -464,11 +464,12 @@ border-radius: 6px;
     width: 100%;
     padding: 30px 100px;
     display: flex;
-    background: linear-gradient(rgba(189, 20, 26, 0.377),rgba(189, 20, 90, 0.397) ) , url(../assets/hero1.jpg);
+    background: linear-gradient(120deg,rgba(95, 12, 14, 0.479),rgba(87, 7, 87, 0.548) ) , url(../assets/hero2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    flex-wrap: wrap;
 }
 .contact-con{
     height: 100%;
@@ -490,11 +491,12 @@ padding-bottom: 40px;
     font-size: 18px;
     font-weight: 600;
     padding: 20px 0 ;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
 }
 .contact-card-con{
     display: flex;
     gap: 23px;
+    
 }
 .contact-card{
     display: flex;
@@ -590,22 +592,131 @@ padding-bottom: 40px;
 
 
 
+/* peopleeeeeeeee  start */
+
+.people{
+    padding: 40px 0px;
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.people-card{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 18px;
+    color: white;
+    width: 250px;
+}
+.people-card h1{
+     font-size: 50px;
+}
+.people-card p{
+     font-size: 18px;
+}
+
+.b-l{
+    border-left: 2px solid white;
+}
+.b-r{
+    border-right: 2px solid white;
+}
+/* peopleeeeeeeee  enddddd */
 
 
 
+/* reviewww starttttttttttttttttttt */
 
+.review{
+    width: 100%;
+    padding: 100px;
+     background: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    }
+    .review-con{
+     height: 120vh;
+      width: 100%;
+      display: flex;
+      border-radius: 23px;
+      overflow: hidden;
+}
+.review-contant{
+    height: 100%;
+    width: 50%;
+    background: linear-gradient(-90deg,#8D0005 ,#d4292f);
+    padding: 50px 50px;
+    border-bottom-left-radius: 23px;
+    padding-top: 100px;
+}
+.review-contant h3{
+    font-size: 18px;
+    text-transform: capitalize;
+    color: white;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+    
+}
+.review-contant h1{
+    font-size: 50px;
+    color: white;
+    line-height: 45px;
+}
+.review-card{
+    width: 90%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-top: 40px;
+    align-items: center;
+}
+.review-slide{
+    width: 100%;
+    border-radius: 23px;
+    background: white;
+    padding: 50px 20px;
+    font-size: 18px;
+    line-height: 27px;
+    position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.review-slide p{
+    font-style: italic;
+    font-size: 16px;
+    line-height: 24px;
+}
+.review-card h3{
+    padding-top: 30px;
+}
+.review-slide i{
+    position: absolute;
+    left: 45%;
+    bottom: -10px;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    transform: rotate(-45deg);
+}
+.review-img{
+height: 100%;
 
+  width: 50%;
+   background: url(../assets/review.jpg);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
 
-
-
-
-
-
-
-
-
-
-
+/* reviewww endddddddddddd
 
 
 
@@ -624,6 +735,14 @@ padding-bottom: 40px;
         padding-left: 20px;
         width: 60%;
     }
+.review-contant{
+    padding: 50px 50px;
+
+}
+    
+     .review{
+        padding:  100px 0;
+     }
     .services-contant{
         padding: 0 60px;
     }
@@ -649,11 +768,20 @@ padding-bottom: 40px;
 
 
 
+
+
 @media (max-width:928px) {
 
    .services-contant h1{
     width:80%;
    }
+   .review-contant{
+    width: 60%;
+   }
+   .review-img{
+    width: 40%;
+   }
+   
     .us-1 h1{
         font-size: 35px;
     }
@@ -757,6 +885,36 @@ padding-bottom: 40px;
         height: auto;
         padding: 20px ;
     }
+.people{
+    flex-wrap: wrap;
+    display: flex;
+}
+    .people-card{
+        width: 50%;
+      
+       
+    }
+    .b-r{
+        border: none;
+    }
+    .b-l{
+        border: none;
+    }
+   .review-contant{
+    width: 100%;
+   }
+   .review-img{
+    display: none;
+}
+.review-con{
+    height: auto;
+}
+.review-slide p{
+    
+    color: rgba(0, 0, 0, 0.87);
+
+}
+
 }
 
 @media (max-width:680px) {
@@ -838,7 +996,16 @@ padding-bottom: 40px;
       .about-contant p{
         font-size: 15px;
       }
-
+      .review-slide p{
+       
+        color: rgba(0, 0, 0, 0.87);
+       
+    
+    }
+    .review-contant{
+        padding: 50px 10px;
+       
+    }
 }
 
 @media (max-width:422px) {
@@ -870,8 +1037,8 @@ padding-bottom: 40px;
         margin-bottom: 20px;
     }
     .hero-con{
-        justify-content: end;
-        padding-bottom: 70px;
+        justify-content: center;
+        padding-top: 100px;
     }
     .hero-con button{
        margin-bottom: 10px;
@@ -894,4 +1061,25 @@ padding-bottom: 40px;
     .services-card-con{
         padding: 100px 20px;
     }
+    .people-card{
+        background: rgb(255, 255, 255);
+        border-radius: 12px;
+       transform: scale(0.9);
+       color: #8D0005;
+    }
+    .people-card h1{
+        font-size: 35px;
+    }
+    .people-card p{
+        font-size: 18px;
+    }
+
+    .review-card{
+        padding: 20px 0;
+        width: 100%;
+    }
+    .review-contant{
+        padding: 50px 10px;
+    }
+   
 }

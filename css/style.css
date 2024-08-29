@@ -12,6 +12,7 @@
     list-style: none;
     text-decoration: none;
    transition: 0.5s;
+   scroll-behavior: smooth;
 }
 
 ::after,

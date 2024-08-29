@@ -1,8 +1,11 @@
 /* Google font */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 * {
-    font-family: "Roboto", sans-serif;
+    font-family: "Poppins", sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -718,6 +721,130 @@ height: 100%;
 
 /* reviewww endddddddddddd
 
+/* footer starttttttttttttt */
+footer{
+    padding: 100px;
+    padding-bottom: 20px;
+    width: 100%;
+    background: #1B1B1B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    flex-wrap: wrap;
+
+}
+footer .logo {
+    height: 100px;
+    background: transparent;
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+
+}
+
+footer  .logo img {
+    height: 80%;
+
+}
+
+footer .logo h1 {
+    line-height: 90px;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.footer-con-1{
+    width: 30%;
+   height: 100%;
+}
+.footer-con-2{ 
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-con-3{
+    height: 100%;
+    width: 30%;
+}
+.footer-con-1 p{
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.815);
+    
+}
+.icons{
+    padding: 30px 10px;
+}
+.footer-con-1 i{
+    font-size: 20px;
+    background: rgba(255, 255, 255, 0.26);
+    padding: 8px;
+    border-radius: 50%;
+}
+.footer-con-1 i:hover{
+    background: white;
+    color: black;
+}
+
+
+
+
+
+.footer-con-2 h1{
+    width: 100%;
+    font-size: 35px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+.footer-con-2 h3{
+    width: 50%;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.644);
+}
+.footer-con-2 h3:hover{
+    color: white;
+}
+.footer-con-3 h1{
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 2px ;
+    padding-bottom: 20px;
+}
+.footer-con-3 h3{
+    font-size: 16px;
+    font-weight: 400;
+    height: 40px;
+}
+.footer-con-3 i{
+    font-size: 20px;
+    color: #bd141a;
+    padding: 10px;
+}
+.bottom{
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    border-top: 1px solid gray;
+   
+}
+/* footer enddddddddd */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -763,7 +890,10 @@ height: 100%;
     padding: 30px 40px;
 
    }
-   
+   footer{
+    padding: 100px 10px;
+    padding-bottom: 30px;
+   }
 }
 
 
@@ -838,6 +968,28 @@ height: 100%;
         width: 100%;
         
     }
+    footer{
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer-con-1{
+        width: 100%; 
+        text-align: center;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-con-2{
+        width: 50%;
+    }
+    .footer-con-3{
+        width: 50%;
+    }
+    
 }
 @media (max-width:800px) {
 
@@ -950,6 +1102,13 @@ height: 100%;
    .services-contant h1{
     width: 100%;
    }
+   .services-card{
+    height: 200px;
+    width: 200px;
+   }
+   .services-card img{
+    height: 60px;
+   }
     .us{
         height: auto;
         flex-direction: column;
@@ -1006,6 +1165,14 @@ height: 100%;
         padding: 50px 10px;
        
     }
+    .footer-con-2{
+        width: 100%;
+        text-align: center;
+    }
+    .footer-con-3{
+        width: 100%;
+        text-align: center;
+    }
 }
 
 @media (max-width:422px) {
@@ -1059,19 +1226,19 @@ height: 100%;
         font-size: 40px;
     }
     .services-card-con{
-        padding: 100px 20px;
+        padding: 100px 0px;
     }
     .people-card{
-        background: rgb(255, 255, 255);
+        background: rgba(255, 255, 255, 0.329);
         border-radius: 12px;
        transform: scale(0.9);
-       color: #8D0005;
+       color: white;
     }
     .people-card h1{
         font-size: 35px;
     }
     .people-card p{
-        font-size: 18px;
+        font-size: 14px;
     }
 
     .review-card{
@@ -1080,6 +1247,16 @@ height: 100%;
     }
     .review-contant{
         padding: 50px 10px;
+    }
+    .services-card{
+        height: 140px;
+        width: 120px;
+       }
+    .services-card img{
+        height: 50px;
+    }
+    .services-card h1{
+        font-size: 15px;
     }
    
 }

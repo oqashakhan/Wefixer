@@ -404,7 +404,11 @@ border-radius: 6px;
     text-transform: uppercase;
     font-weight: 600;
 }
-
+.us-card button:hover{
+    transform: translateY(-10px);
+    color: white;
+    background: black;
+}
 /* us card endddddddddddd */
 
 /* services startttttttttttttttttttt */
@@ -451,6 +455,9 @@ border-radius: 6px;
     box-shadow: 0 0 20px rgba(128, 128, 128, 0.404);
     flex-direction: column;
     gap: 23px;
+}
+.services-card:hover{
+    transform: scale(1.1);
 }
 .services-card img{
     height: 90px;
@@ -815,9 +822,12 @@ footer .logo h1 {
     padding-bottom: 20px;
 }
 .footer-con-3 h3{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
-    height: 40px;
+    height: 50px;
+}
+.footer-con-3 a{
+    color: white;
 }
 .footer-con-3 i{
     font-size: 20px;

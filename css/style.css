@@ -866,6 +866,8 @@ footer .logo h1 {
 .alert form{
     padding-top: 50px;
     position: relative;
+    height: auto;
+
 }
 .alert form i{
     position: absolute;

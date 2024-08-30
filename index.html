@@ -265,9 +265,9 @@
 
         <div class="contact-form" id="contact">
             <form action="">
-                <input placeholder="Name" autofocus type="text" name="name" id="">
+                <input placeholder="Name"  type="text" name="name" id="">
                 <div class="form-row">
-                    <input placeholder="Number" autofocus type="number" name="" id="">
+                    <input placeholder="Number"  type="number" name="" id="">
                     <input placeholder="Place" type="text" name="" id="">
                 </div>
                 <input placeholder="Email" type="email" name="" id="">
@@ -290,19 +290,19 @@
 
         <div class="people">
             <div class="people-card b-r">
-                <h1>5,000+</h1>
+                <h1 data-val="5000+"  class="num">5,000+</h1>
                 <p>Devices fixed</p>
             </div>
             <div class="people-card ">
-                <h1>2,000 +</h1>
+                <h1 data-val="2000 +"  class="num">2,000 +</h1>
                 <p>Free Pickup & Delivery</p>
             </div>
             <div class="people-card b-l b-t">
-                <h1>1,000+</h1>
+                <h1 data-val="1000+"  class="num">1,000+</h1>
                 <p>Happy Customers</p>
             </div>
             <div class="people-card b-l b-t">
-                <h1>5 +</h1>
+                <h1 data-val="5 +"  class="num">5 +</h1>
                 <p>Years in Business</p>
             </div>
         </div>
@@ -381,7 +381,35 @@
         </div>
      </footer>
 
+        <section id="form" class="alert">
+            <div class="contact-form" id="contact">
+                
+                <form action="">
+                    <i id="close" class="fa-solid fa-xmark"></i>
 
+                    <input placeholder="Name"  type="text" name="name" id="">
+                    <div class="form-row">
+                        <input placeholder="Number"  type="number" name="" id="">
+                        <input placeholder="Place" type="text" name="" id="">
+                    </div>
+                    <input placeholder="Email" type="email" name="" id="">
+                       <select id="">
+                        <option> Select the device part</option>
+                        <option value="">Screen</option>
+                        <option value="">Battery</option>
+                        <option value="">Body</option>
+                        <option value="">Water Damage</option>
+                        <option value="">Microphone</option>
+                        <option value="">Speaker</option>
+                        <option value="">Wifi & Network</option>
+                        <option value="">Back Cover</option>
+                        <option value="">Other</option>
+                    </select>
+                    <button>submit</button>
+                </form>
+    
+            </div>
+        </section>
 
     <!-- footterrrrrrrrrrrrrr endddddddddddddddddd -->
 </body>
@@ -389,5 +417,6 @@
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
   AOS.init();
+  
 </script>   
 </html>

@@ -846,11 +846,40 @@ footer .logo h1 {
 
 
 
+/* alart start   */
 
+.alert{
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.514);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    display: none;
+}
+.alert form{
+    padding-top: 50px;
+    position: relative;
+}
+.alert form i{
+    position: absolute;
+    right: 40px;
+    top: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+.show{
+    display: flex;
+}
 
-
-
-
+/* alart enddddddddd   */
 
 
 

@@ -1229,7 +1229,24 @@ footer .logo h1 {
         width: 97%;
     }
     .nav-btn {
-        display: none;
+        font-size: 13px;
+        padding:5px 10px;
+    }
+    .logo{
+          display:flex;
+          align-items: center;
+    }
+    nav{
+        padding: 4px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .logo img{
+        height: 50px;
+    }
+    .logo h1{
+        font-size: 26px;
     }
     .hero-con h1{
         font-size: 30px;

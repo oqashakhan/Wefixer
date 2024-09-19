@@ -886,6 +886,60 @@ footer .logo h1 {
 
 
 
+/* whatsapppp iconnn starttttttttttttttt   */
+
+.w-icon{
+    
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    height: 50px;
+    width: 50px;
+    z-index: 9999;
+}
+.w-icon img{
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+.w-icon:hover{
+    transform: scale(0.9);
+}
+
+
+
+.shake {
+    font-size: 50px;
+    color: #ff6347;
+    animation: shake 0.8s ;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes shake {
+    0% { transform: translate(0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(2px, -2px); }
+    60% { transform: translate(-2px, 2px); }
+    80% { transform: translate(2px, -2px); }
+    100% { transform: translate(0); }
+}
+
+
+
+
+
+/* whatsapppp iconnn enddddddddddd   */
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1230,14 +1284,14 @@ footer .logo h1 {
     }
     .nav-btn {
         font-size: 13px;
-        padding:5px 10px;
+        padding:10px 16px;
     }
     .logo{
           display:flex;
           align-items: center;
     }
     nav{
-        padding: 4px;
+        padding: 10px;
         display: flex;
         justify-content: space-between;
 
